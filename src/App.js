@@ -4,28 +4,29 @@ import About from './components/About';
 import Work from './components/Work';
 
 import Skills from './components/Skills';
+import Showcase from './components/Showcase';
 import Education from './components/Education';
 
 
 
 // const
-// app = 
+// app =
 // props => {}
 const App = props => {
   // props.jsonObj
   // basics
   // jsonObj is the prop being passed.
   const profile = props.jsonObj.basics;
-  
+
   // basicData summary
   const summary = profile.summary;
-  
+
   // work
   const work = props.jsonObj.work;
-  
+
   // skill
   const skill = props.jsonObj.skills;
-  
+
   // education
   const education = props.jsonObj.education;
 
@@ -37,12 +38,13 @@ const App = props => {
             <Profile profile={profile} />
           </div>
         </aside>
-        
+
         <main className="col-md-8">
           <div className="inner">
             <About summary={summary} />
             <Work work={work} />
             <Skills skill={skill} />
+            <Showcase />
             <Education education={education} />
           </div>
         </main>
@@ -54,4 +56,3 @@ const App = props => {
 
 
 export default App;
-
