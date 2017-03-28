@@ -44,7 +44,6 @@ const App = props => {
             <About summary={summary} />
             <Work work={work} />
             <Skills skill={skill} />
-            <Showcase />
             <Education education={education} />
           </div>
         </main>
